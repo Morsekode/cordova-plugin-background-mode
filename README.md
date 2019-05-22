@@ -4,6 +4,7 @@ The code here has been modified from https://github.com/katzer/cordova-plugin-ba
     public void onDestroy()
     {
         stopService();
+        //remove this line so other parts of the app can die as well
         //android.os.Process.killProcess(android.os.Process.myPid());
     }
 ```
