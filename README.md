@@ -1,3 +1,13 @@
+The code here has been modified from https://github.com/katzer/cordova-plugin-background-mode.  Don't assume it will work the way you want it for your app.  For my needs I needed to change how the sevice killed itself.
+
+``` @Override
+    public void onDestroy()
+    {
+        stopService();
+        //android.os.Process.killProcess(android.os.Process.myPid());
+    }
+```
+
 
 <p align="left">
     <b><a href="https://github.com/katzer/cordova-plugin-background-mode/tree/example">SAMPLE APP</a> :point_right:</b>
